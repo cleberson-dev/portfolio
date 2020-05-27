@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Eina Light';
+  src: local('Eina Light'), url(fonts/Eina01-Light.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Eina Regular';
+  src: local('Eina Regular'), url(fonts/Eina01-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Eina Bold';
+  src: local('Eina Bold'), url(fonts/Eina01-Bold.ttf) format('ttf');
+}

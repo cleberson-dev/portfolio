@@ -1,14 +1,13 @@
 import React from 'react';
-import './App.css';
+import AppContainer from './App.styles';
+
+import Header from './components/Header';
 
 function App() {
   return (
-    <div className="App">
-      <span className="App-logo" aria-label="earth" role="img">
-        🌎
-      </span> 
-      <p>Olá Mundinho!</p>
-    </div>
+    <AppContainer>
+      <Header />
+    </AppContainer>
   );
 }
 
