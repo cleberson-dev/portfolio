@@ -1,6 +1,41 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 import Section from '../../components/Section';
+
+const illustrationIn = keyframes`
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+`;
+
+const titleIn = keyframes`
+  from {
+    opacity: 0;
+    position: relative;
+    right: 400px;
+  }
+
+  to {
+    opacity: 1;
+    position: relative;
+    right: 0;
+  }
+`;
+
+const descriptionIn = keyframes`
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+`;
+
+
 
 export const Container = styled(Section)`
   width: 99vw;
@@ -24,11 +59,15 @@ export const Title = styled.h1`
   font-family: 'Eina Bold', sans-serif;
   font-size: 3rem;
   margin: 0;
+  opacity: 0;
+  animation: ${titleIn} 0.5s 0.5s ease-in forwards;
 `;
 
 export const Description = styled.p`
   margin: 5px 0;
   font-size: 1.25rem;
+  opacity: 0;
+  animation: ${descriptionIn} 0.5s 1s ease-in forwards;
 `;
 
 export const RightPane = styled(Pane)`
@@ -39,6 +78,8 @@ export const RightPane = styled(Pane)`
 
 export const Illustration = styled.img`
   width: 60%;
+  transform: scale(0);
+  animation: ${illustrationIn} 0.5s 0.8s ease-in-out forwards;
 `;
 
 export const SocialLinks = styled.address`
