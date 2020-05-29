@@ -100,7 +100,6 @@ export const SocialButton = styled.a`
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  position: relative;
   transition: transform 0.3s;
 
   &:last-child { margin-right: 0; }
