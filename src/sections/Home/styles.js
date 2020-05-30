@@ -82,14 +82,14 @@ export const Illustration = styled.img`
   animation: ${illustrationIn} 0.5s 0.8s ease-in-out forwards;
 `;
 
-export const SocialLinks = styled.address`
+export const ContactButtonsContainer = styled.address`
   display: flex;
   position: absolute;
   right: 2rem;
   bottom: 2rem;
 `;
 
-export const SocialButton = styled.a`
+export const ContactContainer = styled.a`
   background-color: ${props => props.theme.colors.light};
   border-radius: 50%;
   padding: 10px;
