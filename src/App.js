@@ -4,6 +4,7 @@ import AppContainer from './App.styles';
 import Header from './components/Header';
 
 import HomeSection from './sections/Home';
+import AboutSection from './sections/About';
 
 import homeIllustration from './img/home-illustration.svg';
 
@@ -28,6 +29,8 @@ function App() {
           { link: 'mailto:cleberson.dev@gmail.com', icon: { src: emailIcon, color: '#2867B2' } }
         ]}
       />
+
+      <AboutSection />
     </AppContainer>
   );
 }
