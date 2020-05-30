@@ -3,10 +3,13 @@ import React from 'react';
 import { 
   Container, LeftPane, RightPane, 
   Title, Description, Illustration, 
-  SocialLinks, SocialButton, SocialButtonLogo 
+  SocialLinks, SocialButton 
 } from './styles';
 
+import Icon from '../../components/Icon';
+
 import homeIllustration from '../../img/home-illustration.svg';
+
 import at from '../../img/at.svg';
 import github from '../../img/github.svg';
 import twitter from '../../img/twitter.svg';
@@ -25,13 +28,13 @@ function Home() {
 
       <SocialLinks>
         <SocialButton href="https://github.com/cleberson-dev" target="_blank">
-          <SocialButtonLogo src={github} />
+          <Icon src={github} />
         </SocialButton>
         <SocialButton href="https://twitter.com/jrcleb" target="_blank">
-          <SocialButtonLogo src={twitter} />
+          <Icon src={twitter} color='#1DA1F2' />
         </SocialButton>
         <SocialButton href="mailto:cleberson.dev@gmail.com" target="_blank">
-          <SocialButtonLogo src={at} />
+          <Icon src={at} color='#2867B2' />
         </SocialButton>
       </SocialLinks>
     </Container>

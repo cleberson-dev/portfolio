@@ -109,7 +109,3 @@ export const SocialButton = styled.a`
     transition: transform 0.3s;
   }
 `;
-
-export const SocialButtonLogo = styled.img`
-  width: 90%;
-`
