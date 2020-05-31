@@ -15,7 +15,7 @@ import emailIcon from './img/at.svg';
 
 import profilePhoto from './img/profile-photo.jpg';
 
-import skills from './skills.json';
+import skillsData from './data/skills.json';
 
 
 function App() {
@@ -46,7 +46,7 @@ function App() {
       />
 
       <SkillsSection 
-        skills={skills} 
+        skills={skillsData} 
       />
     </AppContainer>
   );
