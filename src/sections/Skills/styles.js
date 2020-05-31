@@ -16,7 +16,7 @@ export const SkillsLists = styled.div`
 `;
 
 export const SkillsCategoryList = styled.ul`
-
+  margin-right: 2rem;
 `;
 
 export const SkillsCategoryTitle = styled.h2`
