@@ -7,6 +7,7 @@ import HomeSection from './sections/Home';
 import AboutSection from './sections/About';
 import SkillsSection from './sections/Skills';
 import ProjectsSection from './sections/Projects';
+import ContactSection from './sections/Contact';
 
 import homeIllustration from './img/home-illustration.svg';
 
@@ -50,6 +51,8 @@ function App() {
       <SkillsSection skills={skillsData} />
 
       <ProjectsSection projects={projectsData} />
+
+      <ContactSection />
     </AppContainer>
   );
 }
