@@ -9,7 +9,7 @@ function SkillsCategory({ label, items }) {
   return (
     <SkillsCategoryList>
       <SkillsCategoryTitle>{label}</SkillsCategoryTitle>
-      { items.length > 0 && items.map(item => <SkillsCategoryItem children={item} />)}
+      { items.length > 0 && items.map(item => <SkillsCategoryItem key={item.id} children={item.name} />)}
     </SkillsCategoryList>
   );
 }
@@ -21,7 +21,9 @@ function Skills({ skills }) {
       <Title>👨‍💻 Minhas habilidades</Title>
       <SkillsLists>
         {skills.length > 0 && skills.map(skill => (
-          <SkillsCategory {...skill} />
+          <SkillsCategory 
+            key={skill.type} label={skill.label} items={skill.items}  
+          />
         ))}
       </SkillsLists>
     </Container>

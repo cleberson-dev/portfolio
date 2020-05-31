@@ -1,27 +1,69 @@
 [
   {
-    "key": "front",
+    "type": "front",
     "label": "🌐 Front-end",
-    "items": ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6"]
+    "items": [
+      { "id": "html", "name": "HTML5" }, 
+      { "id": "css", "name": "CSS3" }, 
+      { "id": "js", "name": "JavaScript" }, 
+      { "id": "sass", "name": "SASS" }, 
+      { "id": "bootstrap", "name": "Bootstrap" }, 
+      { "id": "reactjs", "name": "React.js" }, 
+      { "id": "ts", "name": "Typescript" } 
+    ]
   },
   {
-    "key": "react",
+    "type": "react",
     "label": "⚛️ React.js",
-    "items": ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6"]
+    "items": [
+      { "id": "hooks", "name": "Hooks API" }, 
+      { "id": "reduxjs", "name": "Redux.js" }, 
+      { "id": "styled", "name": "Styled-Components" }, 
+      { "id": "nextjs", "name": "Next.js" }, 
+      { "id": "gatsbyjs", "name": "Gatsby.js" }, 
+      { "id": "mui", "name": "Material UI" }, 
+      { "id": "reactstrap", "name": "Reactstrap" } 
+    ]
   },
   {
-    "key": "tools",
+    "type": "tools",
     "label": "⚙️ Ferramentas",
-    "items": ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6"]
+    "items": [
+      { "id": "git", "name": "Git" }, 
+      { "id": "travisci", "name": "TravisCI" }, 
+      { "id": "docker", "name": "Docker" }, 
+      { "id": "webpack", "name": "Webpack" }, 
+      { "id": "jest", "name": "Jest" }, 
+      { "id": "cypress", "name": "Cypress" },
+      { "id": "npm", "name": "NPM" }
+    ]
   },
   {
-    "key": "practices",
+    "type": "practices",
     "label": "💡 Práticas",
-    "items": ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6"]
+    "items": [
+      { "id": "rest", "name": "REST" }, 
+      { "id": "tdd", "name": "TDD" }, 
+      { "id": "ci", "name": "Integração Contínua (CI)" }, 
+      { "id": "bem", "name": "Metodologia BEM" }, 
+      { "id": "web-components", "name": "Web Components" }, 
+      { "id": "mobile-first", "name": "Mobile-first" },
+      { "id": "oop", "name": "Orientação a Objetos" }
+    ]
   },
   {
-    "key": "others",
+    "type": "others",
     "label": "📌 Outros",
-    "items": ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6"]
+    "items": [
+      { "id": "nodejs", "name": "Node.js" }, 
+      { "id": "expressjs", "name": "Express.js" }, 
+      { "id": "react-native", "name": "React Native" }, 
+      { "id": "electronjs", "name": "Electron.js" }, 
+      { "id": "graphql", "name": "GraphQL (Apollo)" }, 
+      { "id": "sql", "name": "SQL (PostgreSQL)" }, 
+      { "id": "nosql", "name": "NoSQL (MongoDB)" },
+      { "id": "php", "name": "PHP (Básico)" },
+      { "id": "java", "name": "Java (Básico-Intermediário)" }
+    ]
   }
 ]
