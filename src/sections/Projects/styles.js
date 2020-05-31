@@ -113,7 +113,7 @@ export const ProjectOverviewContainer = styled.div`
   align-items: center;
 
   transform: translateX(-100vw);
-  animation: ${projectInfoIn} .2s 0s ease-in forwards;
+  animation: ${projectInfoIn} .1s 0s ease-in forwards;
 `;
 
 export const ProjectName = styled.h2`
@@ -153,6 +153,16 @@ export const ProjectDescription = styled.p`
 
 `;
 
+const coverIn = keyframes`
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+`; 
+
 export const ProjectCover = styled.div`
   height: 100%;
   width: 100%;
@@ -161,6 +171,9 @@ export const ProjectCover = styled.div`
   background-position: center;
   background-size: cover;
   grid-area: cover;
+
+  opacity: 0;
+  animation: ${coverIn} 0.3s 0.3s ease-in-out forwards;
 `;
 
 
@@ -210,4 +223,15 @@ export const Link = styled.a`
 
 export const LinkIcon = styled.img`
   width: 2rem;
+`;
+
+export const IconButton = styled.button`
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+  }
 `;

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { ThemeContext } from 'styled-components';
 
 import { 
@@ -7,7 +7,7 @@ import {
   ProjectOverviewContainer, ProjectName, ProjectTechs, ProjectTechsItem, ProjectDescription, ProjectCover,
   LeftPane, 
   LinksContainer, Link,
-  Header, ProjectOverviewTitle 
+  Header, ProjectOverviewTitle, IconButton
 } from './styles';
 
 import Title from '../../components/Title';
@@ -17,15 +17,15 @@ import back from '../../img/back.svg';
 import github from '../../img/github.svg';
 import web from '../../img/web.svg';
 
-function Project({ name, cover }) {
+function Project({ name, cover, onClickHandler }) {
   return (
-    <ProjectsItem cover={cover}>
+    <ProjectsItem onClick={onClickHandler} cover={cover}>
       <ProjectTitle>{name}</ProjectTitle>
     </ProjectsItem>
   );
 }
 
-function ProjectOverview({ name, description, techs, links, cover }) {
+function ProjectOverview({ name, description, techs, links, cover, backOnClickHandler }) {
   const theme = useContext(ThemeContext);
 
   const linkIcons = { github, web };
@@ -33,7 +33,9 @@ function ProjectOverview({ name, description, techs, links, cover }) {
   return (
     <ProjectOverviewContainer>
       <Header>
-        <Icon src={back} color={theme.colors.light} size={1.1} />
+        <IconButton onClick={backOnClickHandler}>
+          <Icon src={back} color={theme.colors.light} size={1.1} />
+        </IconButton>
         <ProjectOverviewTitle>Detalhes do projeto</ProjectOverviewTitle>
       </Header>
       
@@ -50,7 +52,7 @@ function ProjectOverview({ name, description, techs, links, cover }) {
       <LinksContainer>
       { links.length > 0 && links.map(link => (
         <Link href={link.url}>
-          <Icon src={linkIcons[link.type]} />
+          <Icon src={linkIcons[link.type]} color={theme.colors.light} />
         </Link>
       ))}
       </LinksContainer>
@@ -60,6 +62,8 @@ function ProjectOverview({ name, description, techs, links, cover }) {
 
 
 function Projects({ projects }) {
+  const [currentProjectOverview, setCurrentProjectOverview ] = useState(null);
+
   return (
     <Container id="projects">
       <Title as="h1">📙 Projetos</Title>
@@ -69,9 +73,16 @@ function Projects({ projects }) {
             key={project.id} 
             name={project.name}
             cover={project.cover}
+            onClickHandler={(e) => setCurrentProjectOverview(project)}
           />
         ))}
-        {/* <ProjectOverview {...onePost} /> */}
+
+        { currentProjectOverview && (
+          <ProjectOverview 
+            {...currentProjectOverview}
+            backOnClickHandler={(e) => setCurrentProjectOverview(null)} 
+          />
+        )  }
       </ProjectsList>
       <AdditionalInfo>
         Outros projetos estão disponíveis no meu <a href="https://github.com/cleberson-dev">Github</a>
