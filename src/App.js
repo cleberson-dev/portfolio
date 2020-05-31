@@ -6,6 +6,7 @@ import Header from './components/Header';
 import HomeSection from './sections/Home';
 import AboutSection from './sections/About';
 import SkillsSection from './sections/Skills';
+import ProjectsSection from './sections/Projects';
 
 import homeIllustration from './img/home-illustration.svg';
 
@@ -16,6 +17,7 @@ import emailIcon from './img/at.svg';
 import profilePhoto from './img/profile-photo.jpg';
 
 import skillsData from './data/skills.json';
+import projectsData from './data/projects.json';
 
 
 function App() {
@@ -45,9 +47,9 @@ function App() {
         }}
       />
 
-      <SkillsSection 
-        skills={skillsData} 
-      />
+      <SkillsSection skills={skillsData} />
+
+      <ProjectsSection projects={projectsData} />
     </AppContainer>
   );
 }
