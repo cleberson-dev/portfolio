@@ -11,9 +11,18 @@ import Title from '../../components/Title';
 
 import github from '../../img/github.svg';
 import twitter from '../../img/twitter.svg';
+import instagram from '../../img/instagram.svg';
+import linkedin from '../../img/linkedin.svg';
 
 function Contact() {
   const theme = useContext(ThemeContext);
+
+  const socials = [
+    { url: 'https://github.com/cleberson-dev', icon: { src: github } },
+    { url: 'https://twitter.com/jrcleb', icon: { src: twitter } },
+    { url: 'https://www.instagram.com/cleberson.io/', icon: { src: instagram } },
+    { url: 'https://www.linkedin.com/in/clebersondev/', icon: { src: linkedin } }
+  ]
 
   return (
     <Container id="contact">
@@ -28,8 +37,11 @@ function Contact() {
         <Social>
           <SocialText>...e me acompanhe <br />nas minhas redes sociais!</SocialText>
           <SocialLinks>
-            <SocialLink><SocialIcon src={github} color={theme.colors.light} /></SocialLink>
-            <SocialLink><SocialIcon src={twitter} color={theme.colors.light} /></SocialLink>
+            {socials.length > 0 && socials.map(social => (
+              <SocialLink href={social.url}>
+                <SocialIcon {...social.icon} color={theme.colors.light} />
+              </SocialLink>
+            ))}
           </SocialLinks>
         </Social>
       </div>
