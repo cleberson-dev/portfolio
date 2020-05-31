@@ -5,6 +5,7 @@ import Header from './components/Header';
 
 import HomeSection from './sections/Home';
 import AboutSection from './sections/About';
+import SkillsSection from './sections/Skills';
 
 import homeIllustration from './img/home-illustration.svg';
 
@@ -14,6 +15,7 @@ import emailIcon from './img/at.svg';
 
 import profilePhoto from './img/profile-photo.jpg';
 
+import skills from './skills.json';
 
 
 function App() {
@@ -41,6 +43,10 @@ function App() {
           location: 'São Luís - MA, Brasil',
           education: 'Engenharia da Computação (7/10)'
         }}
+      />
+
+      <SkillsSection 
+        skills={skills} 
       />
     </AppContainer>
   );

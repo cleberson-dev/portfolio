@@ -1,0 +1,27 @@
+[
+  {
+    "key": "front",
+    "label": "🌐 Front-end",
+    "items": ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6"]
+  },
+  {
+    "key": "react",
+    "label": "⚛️ React.js",
+    "items": ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6"]
+  },
+  {
+    "key": "tools",
+    "label": "⚙️ Ferramentas",
+    "items": ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6"]
+  },
+  {
+    "key": "practices",
+    "label": "💡 Práticas",
+    "items": ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6"]
+  },
+  {
+    "key": "others",
+    "label": "📌 Outros",
+    "items": ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6"]
+  }
+]
