@@ -7,7 +7,7 @@ function Navbar() {
     { link: '#about', label: '🧑 Sobre' },
     { link: '#skills', label: '👨‍💻 Habilidades' },
     { link: '#projects', label: '📙 Projetos' },
-    { link: '#contact', label: '📙 Contato' }
+    { link: '#contact', label: '📝 Contato' }
   ];
   
   return (
