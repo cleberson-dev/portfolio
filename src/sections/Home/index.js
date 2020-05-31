@@ -8,6 +8,7 @@ import {
 
 import Icon from '../../components/Icon';
 
+
 function ContactButtons({ contacts }) {
   return (
     <ContactButtonsContainer>

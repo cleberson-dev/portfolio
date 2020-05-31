@@ -1,6 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 
 import Section from '../../components/Section';
+import SectionTitle from '../../components/Title';
 
 const illustrationIn = keyframes`
   from {
@@ -55,12 +56,8 @@ const Pane = styled.div`
 
 export const LeftPane = styled(Pane)``;
 
-export const Title = styled.h1`
-  font-family: 'Eina Bold', sans-serif;
-  font-size: 3rem;
-  margin: 0;
-  opacity: 0;
-  animation: ${titleIn} 0.5s 0.5s ease-in forwards;
+export const Title = styled(SectionTitle)`
+  font-size: 10rem;
 `;
 
 export const Description = styled.p`
