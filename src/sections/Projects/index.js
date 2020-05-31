@@ -61,7 +61,7 @@ function ProjectOverview({ name, description, techs, links, cover }) {
 
 function Projects({ projects }) {
   return (
-    <Container>
+    <Container id="projects">
       <Title as="h1">📙 Projetos</Title>
       <ProjectsList>
         {projects.length > 0 && projects.map(project => (

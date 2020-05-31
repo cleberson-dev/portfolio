@@ -17,7 +17,7 @@ function SkillsCategory({ label, items }) {
 
 function Skills({ skills }) {
   return (
-    <Container>
+    <Container id="skills">
       <Title>👨‍💻 Minhas habilidades</Title>
       <SkillsLists>
         {skills.length > 0 && skills.map(skill => (

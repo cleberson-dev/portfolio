@@ -14,7 +14,7 @@ function About({ description, profilePhoto, summary }) {
   const age = getAge([day, month, year]);
 
   return (
-    <Container as="section">
+    <Container as="section" id="about">
       <Title>🧑 Sobre mim</Title>
       <Description>{description}</Description>
       <Me>

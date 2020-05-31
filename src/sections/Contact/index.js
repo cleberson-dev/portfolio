@@ -16,7 +16,7 @@ function Contact() {
   const theme = useContext(ThemeContext);
 
   return (
-    <Container>
+    <Container id="contact">
       <Title>📙 Contate-me!</Title>
       <div style={{ display: 'flex', width: '100%' }}>
         <ContactForm>

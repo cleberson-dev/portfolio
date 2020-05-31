@@ -4,10 +4,10 @@ import { Container, List, Item, Link } from './styles';
 
 function Navbar() {
   const items = [
-    { link: '#', label: '🧑 Sobre' },
-    { link: '#', label: '👨‍💻 Habilidades' },
-    { link: '#', label: '📙 Projetos' },
-    { link: '#', label: '📙 Contatos' }
+    { link: '#about', label: '🧑 Sobre' },
+    { link: '#skills', label: '👨‍💻 Habilidades' },
+    { link: '#projects', label: '📙 Projetos' },
+    { link: '#contact', label: '📙 Contato' }
   ];
   
   return (
