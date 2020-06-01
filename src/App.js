@@ -19,6 +19,7 @@ import profilePhoto from './img/profile-photo.jpg';
 
 import skillsData from './data/skills.json';
 import projectsData from './data/projects.json';
+import aboutData from './data/about.json';
 
 
 function App() {
@@ -38,14 +39,9 @@ function App() {
       />
 
       <AboutSection 
-        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac ligula placerat, egestas lacus sed, molestie urna. Vivamus volutpat venenatis nunc tincidunt eleifend. Aenean ac venenatis risus. Sed nec finibus felis, in vestibulum magna. Vivamus vulputate volutpat augue at aliquet. Nullam vel maximus lacus. Etiam in blandit lorem. Nullam euismod tempus augue et posuere. In sit amet fermentum magna, sit amet semper tellus. Donec efficitur scelerisque metus vitae congue. Ut vel metus quis ex dictum pulvinar. Vestibulum pretium sapien vel velit dignissim tincidunt. Etiam ullamcorper ex eget sapien aliquam malesuada. Mauris rhoncus arcu sapien, sed cursus felis dapibus id. Phasellus vitae arcu lobortis, feugiat risus in, pellentesque lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac ligula placerat, egestas lacus sed, molestie urna. Vivamus volutpat venenatis nunc tincidunt eleifend. Aenean ac venenatis risus. Sed nec finibus felis, in vestibulum magna. Vivamus vulputate volutpat augue at aliquet. Nullam vel maximus lacus. Etiam in blandit lorem. Nullam euismod tempus augue et posuere. In sit amet fermentum magna, sit amet semper tellus. Donec efficitur scelerisque metus vitae congue. Ut vel metus quis ex dictum pulvinar. Vestibulum pretium sapien vel velit dignissim tincidunt. Etiam ullamcorper ex eget sapien aliquam malesuada. Mauris rhoncus arcu sapien, sed cursus felis dapibus id. Phasellus vitae arcu lobortis, feugiat risus in, pellentesque lectus.'
+        description={aboutData.description}
         profilePhoto={profilePhoto}
-        summary={{
-          name: 'Cleberson F R Junior',
-          birth: [11, 1, 1999],
-          location: 'São Luís - MA, Brasil',
-          education: 'Engenharia da Computação (7/10)'
-        }}
+        summary={aboutData.summary}
       />
 
       <SkillsSection skills={skillsData} />

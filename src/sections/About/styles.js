@@ -6,7 +6,7 @@ export const Container = styled(Section)`
   padding: 2rem;
   color: ${props => props.theme.colors.dark};
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-rows: auto 1fr;
   grid-template-areas: 
     "title ."
@@ -17,22 +17,23 @@ export const Title = styled.h1`
   grid-area: title;
 `;
 
-export const Description = styled.p`
+export const Description = styled.div`
+  font-family: 'Open Sans', sans-serif;
   grid-area: description;
   align-self: center;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.7rem;
 `;
 
 export const Me = styled.div`
   grid-area: summary;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
   figure {
-    margin-right: 1rem;
+    margin-bottom: 1rem;
   }
 
   &:hover figure {
