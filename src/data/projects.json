@@ -2,49 +2,50 @@
   {
     "id": "onepost",
     "name": "OnePost",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac ligula placerat, egestas lacus sed, molestie urna. Vivamus volutpat venenatis nunc tincidunt eleifend. Aenean ac venenatis risus. Sed nec finibus felis, in vestibulum magna.. Vivamus vulputate volutpat augue at aliquet. Nullam vel maximus lacus. Etiam in blandit lorem. Nullam euismod tempus augue et posuere. In sit amet",
+    "description": "Webapp (em MERN) de Rede Social, onde usuários cadastrados podem escrever e curtir publicações. Foi aplicado autenticação, autorização, gerenciamento de estados globais, encriptação de senhas, entre outras coisas.",
     "techs": [
       { "id": "js", "name": "JavaScript"  },
-      { "id": "nodejs", "name": "Node.js"  },
+      { "id": "reactjs", "name": "React.js"  },
       { "id": "expressjs", "name": "Express.js"  },
       { "id": "mongo", "name": "MongoDB"  },
-      { "id": "jwt", "name": "JWT"  }
-    ],
-    "links": {
-      "github": "https://github.com/cleberson-dev"
-    },
-    "cover": "https://unsplash.com/photos/Fg0z0GBydqQ/download?force=true&w=640"
-  },
-  {
-    "id": "onepost",
-    "name": "OnePost",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac ligula placerat, egestas lacus sed, molestie urna. Vivamus volutpat venenatis nunc tincidunt eleifend. Aenean ac venenatis risus. Sed nec finibus felis, in vestibulum magna.. Vivamus vulputate volutpat augue at aliquet. Nullam vel maximus lacus. Etiam in blandit lorem. Nullam euismod tempus augue et posuere. In sit amet",
-    "techs": [
-      { "id": "js", "name": "JavaScript"  },
       { "id": "nodejs", "name": "Node.js"  },
-      { "id": "expressjs", "name": "Express.js"  },
-      { "id": "mongo", "name": "MongoDB"  },
-      { "id": "jwt", "name": "JWT"  }
-    ],
-    "links": {
-      "github": "https://github.com/cleberson-dev"
-    },
-    "cover": "https://unsplash.com/photos/Fg0z0GBydqQ/download?force=true&w=640"
-  },
-  {
-    "id": "onepost",
-    "name": "OnePost",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac ligula placerat, egestas lacus sed, molestie urna. Vivamus volutpat venenatis nunc tincidunt eleifend. Aenean ac venenatis risus. Sed nec finibus felis, in vestibulum magna.. Vivamus vulputate volutpat augue at aliquet. Nullam vel maximus lacus. Etiam in blandit lorem. Nullam euismod tempus augue et posuere. In sit amet",
-    "techs": [
-      { "id": "js", "name": "JavaScript"  },
-      { "id": "nodejs", "name": "Node.js"  },
-      { "id": "expressjs", "name": "Express.js"  },
-      { "id": "mongo", "name": "MongoDB"  },
+      { "id": "styled-components", "name": "Styled Components"  },
       { "id": "jwt", "name": "JWT"  }
     ],
     "links": [
       { "type": "github", "url": "https://github.com/cleberson-dev/onepost" }
     ],
-    "cover": "https://unsplash.com/photos/Fg0z0GBydqQ/download?force=true&w=640"
+    "cover": "https://unsplash.com/photos/S-TcfjrYVKo/download?force=true&w=640"
+  },
+  {
+    "id": "imoveisja",
+    "name": "Imóveis Já!",
+    "description": "Website construído com Django para anúncio de imóveis.",
+    "techs": [
+      { "id": "python", "name": "Python"  },
+      { "id": "django", "name": "Django"  },
+      { "id": "html", "name": "HTML5"  },
+      { "id": "css", "name": "CSS3"  },
+      { "id": "js", "name": "Javascript"  }
+    ],
+    "links": [
+      { "type": "github", "url": "https://github.com/cleberson-dev/imoveis-ja" }
+    ],
+    "cover": "https://unsplash.com/photos/561igiTyvSk/download?force=true&w=640"
+  },
+  {
+    "id": "friendslist",
+    "name": "Friendslist",
+    "description": "Webapp SPA para gerenciamento de contatos construído com React.js e SASS. É possível listar, adicionar, remover e editar contatos, salvando número, email e nome. Mobile-first, progressive enhancement foram aplicados, juntamente com um pré-processador CSS, extendendo funcionalidades.",
+    "techs": [
+      { "id": "js", "name": "JavaScript"  },
+      { "id": "reactjs", "name": "React.js"  },
+      { "id": "sass", "name": "SASS"  },
+      { "id": "react-hooks", "name": "Hooks"  }
+    ],
+    "links": [
+      { "type": "github", "url": "https://github.com/cleberson-dev/friendslist" }
+    ],
+    "cover": "https://unsplash.com/photos/Cecb0_8Hx-o/download?force=true&w=640"
   }
 ]
