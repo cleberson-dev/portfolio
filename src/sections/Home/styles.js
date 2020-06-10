@@ -44,17 +44,27 @@ export const Container = styled(Section)`
   box-sizing: border-box;
   padding: 2rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  
   background-color: ${props => props.theme.colors.dark};
   color: ${props => props.theme.colors.light};
+
+  & > figure {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media(max-width: 320px) {
+    flex-direction: column;
+    padding: 1rem;
+  }
 `;
 
-const Pane = styled.div`
+export const Content = styled.div`
   width: 50%;
 `;
 
-export const LeftPane = styled(Pane)``;
 
 export const Title = styled(SectionTitle)`
   font-size: 10rem;
@@ -67,14 +77,11 @@ export const Description = styled.p`
   animation: ${descriptionIn} 0.5s 1s ease-in forwards;
 `;
 
-export const RightPane = styled(Pane)`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
+
 
 export const Illustration = styled.img`
   width: 60%;
+  justify-self: center;
   transform: scale(0);
   animation: ${illustrationIn} 0.5s 0.8s ease-in-out forwards;
 `;

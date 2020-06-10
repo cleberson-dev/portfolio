@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { 
-  Container, LeftPane, RightPane, 
+  Container, Content, 
   Title, Description, Illustration, 
   ContactButtonsContainer, ContactContainer
 } from './styles';
@@ -34,15 +34,15 @@ function Contact({ link, icon }) {
 function Home({ greeting, description, illustration, contacts }) {
   return (
     <Container as="main">
-      <LeftPane>
+      <Content>
         <Title>{greeting}</Title>
         <Description>{description}</Description>
-      </LeftPane>
+      </Content>
 
-      <RightPane>
+      <figure>
         <Illustration src={illustration} />
-      </RightPane>
-
+      </figure>
+      
       { contacts.length > 0 && <ContactButtons contacts={contacts} /> }
     </Container>
   );
