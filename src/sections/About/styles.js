@@ -11,10 +11,16 @@ export const Container = styled(Section)`
   grid-template-areas: 
     "title ."
     "description summary";
-`;
 
-export const Title = styled.h1`
-  grid-area: title;
+  @media(max-width: 320px) {
+    padding: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "title"
+    "summary"
+    "description";
+  }
 `;
 
 export const Description = styled.div`
@@ -44,6 +50,16 @@ export const Me = styled.div`
     color: ${props => props.theme.colors.primary};
     transition: color 0.2s;
   }
+
+  @media(max-width: 320px) {
+    flex-direction: row;
+    justify-content: flex-start;
+
+    figure {
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+  }
 `;
 
 export const Summary = styled.div`
@@ -59,6 +75,15 @@ export const SummaryText = styled.p`
     font-size: 1.2rem;
     font-weight: bold;
   }
+
+  @media(max-width: 320px) {
+    flex-direction: row;
+    font-size: 0.85rem;
+
+    &:first-child {
+      font-size: 1.1rem;
+    }
+  }
 `;
 
 export const ProfilePhoto = styled.figure`
@@ -70,4 +95,9 @@ export const ProfilePhoto = styled.figure`
   background-size: cover;
   background-position: 0 -10px;
   margin: 0;
+
+  @media(max-width: 320px) {
+    width: 80px;
+    height: 80px;
+  }
 `;
