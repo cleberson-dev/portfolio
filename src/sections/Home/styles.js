@@ -55,7 +55,7 @@ export const Container = styled(Section)`
     justify-content: center;
   }
 
-  @media(max-width: 320px) {
+  @media(max-width: ${props => props.theme.breakpoints.mobile}) {
     min-height: 90vh;
     padding: 5px;
     flex-direction: column-reverse;
@@ -71,7 +71,8 @@ export const Container = styled(Section)`
 
 export const Content = styled.div`
   width: 50%;
-  @media(max-width: 320px) {
+
+  @media(max-width: ${props => props.theme.breakpoints.mobile}) {
     width: 100%;
     box-sizing: border-box; 
     padding: 0 1rem;
@@ -83,7 +84,8 @@ export const Title = styled.h1`
   font-family: 'Eina Bold', sans-serif;
   font-size: 3rem;
   margin: 1rem 0;
-  @media(max-width: 320px) {
+
+  @media(max-width: ${props => props.theme.breakpoints.mobile}) {
     font-size: 2rem;
     margin: 0;
     margin-top: 1.5rem;
@@ -95,7 +97,7 @@ export const Description = styled.p`
   font-size: 1.25rem;
   opacity: 0;
   animation: ${descriptionIn} 0.5s 1s ease-in forwards;
-  @media(max-width: 320px) {
+  @media(max-width: ${props => props.theme.breakpoints.mobile}) {
     font-size: 1rem;
   }
 `;
@@ -115,7 +117,7 @@ export const ContactButtonsContainer = styled.address`
   right: 2rem;
   bottom: 2rem;
 
-  @media(max-width: 320px)  {
+  @media(max-width: ${props => props.theme.breakpoints.mobile}) {
     right: 1rem;
     bottom: 1rem;
   }
@@ -141,7 +143,7 @@ export const ContactContainer = styled.a`
     transition: transform 0.3s;
   }
 
-  @media(max-width: 320px)  {
+  @media(max-width: ${props => props.theme.breakpoints.mobile})  {
     width: 1rem;
     height: 1rem;
   }

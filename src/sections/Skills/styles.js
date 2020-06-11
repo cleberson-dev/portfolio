@@ -7,7 +7,7 @@ export const Container = styled(Section)`
   color: ${props => props.theme.colors.light};
   padding: 2rem;
 
-  @media(max-width: 320px) {
+  @media(max-width: ${props => props.theme.breakpoints.mobile}) {
     padding: 1rem;
 
     & > h1 {
@@ -25,7 +25,7 @@ export const SkillsLists = styled.div`
 
 export const SkillsCategoryList = styled.ul`
   margin-right: 2rem;
-  @media(max-width: 320px) {
+  @media(max-width: ${props => props.theme.breakpoints.mobile}) {
     padding-left: 1.5rem;
     margin-bottom: 0;
   }
@@ -38,7 +38,7 @@ export const SkillsCategoryTitle = styled.h2`
   position: relative;
   right: 1.5rem;
 
-  @media(max-width: 320px) {
+  @media(max-width: ${props => props.theme.breakpoints.mobile}) {
     font-size: 1.4rem;
   }
 `;

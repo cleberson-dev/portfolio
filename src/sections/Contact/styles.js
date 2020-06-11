@@ -8,7 +8,7 @@ export const Container = styled(Section)`
   color: ${props => props.theme.colors.light};
   padding: 2rem;
 
-  @media(max-width: 320px) {
+  @media(max-width: ${props => props.theme.breakpoints.mobile}) {
     padding: 1rem;
   }
 `;
@@ -18,7 +18,7 @@ export const Content = styled.div`
   display: flex;
   flex-direction: row;
   
-  @media(max-width: 320px) {
+  @media(max-width: ${props => props.theme.breakpoints.mobile}) {
     flex-direction: column;
   }
 `;
@@ -32,7 +32,7 @@ export const ContactForm = styled.form`
     margin-bottom: 1rem;
   }
 
-  @media(max-width: 320px) {
+  @media(max-width: ${props => props.theme.breakpoints.mobile}) {
     width: 100%;
   }
 `;
@@ -124,7 +124,7 @@ export const SendButton = styled.button`
 export const Social = styled.div`
   margin-top: 0;
   margin-left: 2rem;
-  @media(max-width: 320px) {
+  @media(max-width: ${props => props.theme.breakpoints.mobile}) {
     margin: 1rem 0;
   }
 `;

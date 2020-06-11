@@ -12,7 +12,7 @@ export const Container = styled(Section)`
     "title ."
     "description summary";
 
-  @media(max-width: 320px) {
+  @media(max-width: ${props => props.theme.breakpoints.mobile}) {
     padding: 1rem;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
@@ -51,7 +51,7 @@ export const Me = styled.div`
     transition: color 0.2s;
   }
 
-  @media(max-width: 320px) {
+  @media(max-width: ${props => props.theme.breakpoints.mobile}) {
     flex-direction: row;
     justify-content: flex-start;
 
@@ -76,7 +76,7 @@ export const SummaryText = styled.p`
     font-weight: bold;
   }
 
-  @media(max-width: 320px) {
+  @media(max-width: ${props => props.theme.breakpoints.mobile}) {
     flex-direction: row;
     font-size: 0.85rem;
 
@@ -96,7 +96,7 @@ export const ProfilePhoto = styled.figure`
   background-position: 0 -10px;
   margin: 0;
 
-  @media(max-width: 320px) {
+  @media(max-width: ${props => props.theme.breakpoints.mobile}) {
     width: 80px;
     height: 80px;
   }
