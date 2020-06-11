@@ -27,7 +27,7 @@ function Contact() {
   return (
     <Container id="contact">
       <Title>📝 Contate-me!</Title>
-      <div style={{ display: 'flex', width: '100%' }}>
+      <div style={{ display: 'flex', width: '100%', flexDirection: 'column' }}>
         <ContactForm>
           <Field disabled type="text" placeholder="Nome..." />
           <Field disabled type="email" placeholder="Email..." />

@@ -7,6 +7,10 @@ export const Container = styled(Section)`
   background-color: #3A86FF;
   color: ${props => props.theme.colors.light};
   padding: 2rem;
+
+  @media(max-width: 320px) {
+    padding: 1rem;
+  }
 `;
 
 export const ContactForm = styled.form`
@@ -16,6 +20,10 @@ export const ContactForm = styled.form`
 
   input, textarea {
     margin-bottom: 1rem;
+  }
+
+  @media(max-width: 320px) {
+    width: 100%;
   }
 `;
 
@@ -106,6 +114,9 @@ export const SendButton = styled.button`
 export const Social = styled.div`
   margin-top: 0;
   margin-left: 2rem;
+  @media(max-width: 320px) {
+    margin: 1rem 0;
+  }
 `;
 
 export const SocialText = styled.p`
