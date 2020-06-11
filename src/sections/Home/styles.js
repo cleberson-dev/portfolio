@@ -146,5 +146,9 @@ export const ContactContainer = styled.a`
   @media(max-width: ${props => props.theme.breakpoints.mobile})  {
     width: 1rem;
     height: 1rem;
+
+    div > svg {
+      width: 75%;
+    } 
   }
 `;
