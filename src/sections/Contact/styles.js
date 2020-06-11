@@ -13,6 +13,16 @@ export const Container = styled(Section)`
   }
 `;
 
+export const Content = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  
+  @media(max-width: 320px) {
+    flex-direction: column;
+  }
+`;
+
 export const ContactForm = styled.form`
   width: 50%;
   display: flex;

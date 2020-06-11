@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
 
 import { 
-  Container, ContactForm, Field, TextArea, SendButton,
+  Container, Content, ContactForm, Field, TextArea, SendButton, 
   Social, SocialLinks, SocialText, SocialLink, SocialIcon
 } from './styles';
 
@@ -27,7 +27,7 @@ function Contact() {
   return (
     <Container id="contact">
       <Title>📝 Contate-me!</Title>
-      <div style={{ display: 'flex', width: '100%', flexDirection: 'column' }}>
+      <Content>
         <ContactForm>
           <Field disabled type="text" placeholder="Nome..." />
           <Field disabled type="email" placeholder="Email..." />
@@ -44,7 +44,7 @@ function Contact() {
             ))}
           </SocialLinks>
         </Social>
-      </div>
+      </Content>
     </Container>
   );
 }
