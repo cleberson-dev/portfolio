@@ -43,6 +43,11 @@ export const Field = styled.input`
   &:focus {
     
   }
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
 `;
 
 export const TextArea = styled.textarea`
@@ -63,6 +68,11 @@ export const TextArea = styled.textarea`
     color: #3A86FF;
     font-style: italic;
   }
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
 `;
 
 export const SendButton = styled.button`
@@ -81,6 +91,12 @@ export const SendButton = styled.button`
 
   &:hover {
     filter: grayscale(0.4);
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    filter: grayscale(0);
   }
 `;
 

@@ -29,10 +29,10 @@ function Contact() {
       <Title>📝 Contate-me!</Title>
       <div style={{ display: 'flex', width: '100%' }}>
         <ContactForm>
-          <Field type="text" placeholder="Nome..." />
-          <Field type="email" placeholder="Email..." />
-          <TextArea placeholder="Digite aqui sua mensagem..." />
-          <SendButton>Enviar</SendButton>
+          <Field disabled type="text" placeholder="Nome..." />
+          <Field disabled type="email" placeholder="Email..." />
+          <TextArea disabled placeholder="Digite aqui sua mensagem..." />
+          <SendButton disabled >Enviar</SendButton>
         </ContactForm>
         <Social>
           <SocialText>...e me acompanhe <br />nas minhas redes sociais!</SocialText>
