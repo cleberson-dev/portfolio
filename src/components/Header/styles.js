@@ -13,4 +13,11 @@ export const Container = styled.header`
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
+
+
+  @media(max-width: 320px) {
+    background-color: ${props => props.theme.colors.primary};
+    position: relative;
+    padding: 1rem;
+  }
 `;

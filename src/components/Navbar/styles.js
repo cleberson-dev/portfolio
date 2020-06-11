@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
-export const Container = styled.nav``; 
+export const Container = styled.nav`
+  @media(max-width: 320px) {
+   visibility: hidden; 
+  }
+`; 
 
 export const List = styled.ul`
   list-style: none;
