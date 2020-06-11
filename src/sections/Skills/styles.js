@@ -6,6 +6,14 @@ export const Container = styled(Section)`
   background-color: #8338EC;
   color: ${props => props.theme.colors.light};
   padding: 2rem;
+
+  @media(max-width: 320px) {
+    padding: 1rem;
+
+    & > h1 {
+      margin-bottom: 0;
+    }
+  }
 `;
 
 export const SkillsLists = styled.div`
@@ -17,6 +25,10 @@ export const SkillsLists = styled.div`
 
 export const SkillsCategoryList = styled.ul`
   margin-right: 2rem;
+  @media(max-width: 320px) {
+    padding-left: 1.5rem;
+    margin-bottom: 0;
+  }
 `;
 
 export const SkillsCategoryTitle = styled.h2`
@@ -25,6 +37,10 @@ export const SkillsCategoryTitle = styled.h2`
   margin-bottom: 10px;
   position: relative;
   right: 1.5rem;
+
+  @media(max-width: 320px) {
+    font-size: 1.4rem;
+  }
 `;
 
 export const SkillsCategoryItem = styled.li`
