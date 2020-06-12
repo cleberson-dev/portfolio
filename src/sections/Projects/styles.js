@@ -13,6 +13,14 @@ export const Container = styled(Section)`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media(max-width: ${props => props.theme.breakpoints.mobile}) {
+    & > h1 {
+      margin: 0;
+      margin-left: 1rem;
+      margin-top: 2rem;
+    }
+  }
 `;
 
 export const ProjectsList = styled.ul`
@@ -23,6 +31,16 @@ export const ProjectsList = styled.ul`
   padding: 0;
   margin-top: 2rem;
   position: relative;
+
+  @media(max-width: ${props => props.theme.breakpoints.mobile}) {
+    flex-direction: column;
+
+    & > h1 {
+      margin: 0;
+      margin-left: 1rem;
+      margin-top: 1rem;
+    }
+  }
 `;
 
 export const ProjectsItem = styled.li`
@@ -55,6 +73,11 @@ export const ProjectsItem = styled.li`
     top: 0;
     left: 0;
   }
+
+  @media(max-width: ${props => props.theme.breakpoints.mobile}) {
+    width: 100vw;
+    height: 100vw;
+  }
 `;
 
 export const ProjectTitle = styled.h1`
@@ -79,6 +102,13 @@ export const AdditionalInfo = styled.p`
   }
   & a:hover{
     text-decoration: underline;
+  }
+
+  @media(max-width: ${props => props.theme.breakpoints.mobile}) {
+    margin: 0;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    align-self: flex-start;
   }
 `;
 
@@ -114,6 +144,21 @@ export const ProjectOverviewContainer = styled.div`
 
   transform: translateX(-100vw);
   animation: ${projectInfoIn} .1s 0s ease-in forwards;
+
+  @media(max-width: ${props => props.theme.breakpoints.mobile}) {
+    position: fixed;
+    width: 100vw;
+    min-height: 100vh;
+    grid-template-rows: auto 35vh 1fr auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'header'
+    'cover'
+    'details'
+    'links';
+    align-items: flex-start;
+    overflow-y: scroll;
+  }
 `;
 
 export const ProjectName = styled.h2`
@@ -121,10 +166,15 @@ export const ProjectName = styled.h2`
   font-size: 2.5rem;
   margin-top: 0;
   margin-bottom: 5px;
+
+  @media(max-width: ${props => props.theme.breakpoints.mobile}) {
+    font-size: 1.75rem;
+  }
 `;
 
 export const ProjectTechs = styled.ul`
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   list-style: none;
 `;
@@ -138,11 +188,8 @@ export const ProjectTechsItem = styled.li`
   border-radius: 0.8rem;
   opacity: 0.5;
   cursor: default;
-  margin-left: 10px;
-
-  &:first-child {
-    margin-left: 0;
-  }
+  margin-top: 5px;
+  margin-right: 10px;
 
   &:hover {
     opacity: 1;
@@ -186,6 +233,11 @@ export const LeftPane = styled.div`
   flex-direction: column;
   justify-content: center;
   grid-area: details;
+
+  @media(max-width: ${props => props.theme.breakpoints.mobile}) {
+    width: 100%;
+    height: fit-content !important;
+  }
 `;
 
 export const Header = styled.header`
@@ -196,6 +248,10 @@ export const Header = styled.header`
 
   & h1 {
     margin-left: 0.6rem;
+  }
+
+  @media(max-width: ${props => props.theme.breakpoints.mobile}) {
+    margin: 1rem;
   }
 `;
 

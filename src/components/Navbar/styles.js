@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.nav`
   @media(max-width: ${props => props.theme.breakpoints.mobile}) {
-   visibility: hidden; 
+   display: none; 
   }
 `; 
 
