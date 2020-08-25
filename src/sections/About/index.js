@@ -15,7 +15,7 @@ function About({ description, profilePhoto, summary }) {
 
   return (
     <Container as="section" id="about">
-      <Title>🧑 Sobre mim</Title>
+      <Title><span role="img" aria-label="Emoji do rosto de uma pessoa">🧑</span> Sobre mim</Title>
       <Description>
         <p>Nascido em Governador Nunes Freire -MA, hoje em dia resido em São Luís - MA, cursando o 7º período de Engenharia da Computação, com objetivos de me mudar futuramente para regiões de maior oportunidade no mercado de TI, enquanto isso o trabalho terá que ser feito em regiões próximas ou de forma remota.</p>
         <p>Tendo 3 anos de experiência com programação, inicialmente alternando entre várias linguagens (PHP, Java, C/C++, Python), construindo aplicações web, já tenho 2 anos de desenvolvimento primário em JavaScript.</p>

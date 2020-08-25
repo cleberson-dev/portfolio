@@ -66,7 +66,8 @@ function Projects({ projects }) {
 
   return (
     <Container id="projects">
-      <Title as="h1">📙 Projetos</Title>
+      <Title as="h1">
+        <span role="img" aria-label="Emoji de Livro">📙</span> Projetos</Title>
       <ProjectsList>
         {projects.length > 0 && projects.map(project => (
           <Project

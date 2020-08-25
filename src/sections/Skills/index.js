@@ -18,7 +18,8 @@ function SkillsCategory({ label, items }) {
 function Skills({ skills }) {
   return (
     <Container id="skills">
-      <Title>👨‍💻 Minhas habilidades</Title>
+      <Title>
+      <span role="img" aria-label="Emoji de uma pessoa no computador">👨‍💻</span> Minhas habilidades</Title>
       <SkillsLists>
         {skills.length > 0 && skills.map(skill => (
           <SkillsCategory 
