@@ -20,24 +20,32 @@ import skillsData from './data/skills.json';
 import projectsData from './data/projects.json';
 import aboutData from './data/about.json';
 
-
 function App() {
   return (
     <AppContainer>
       <Header />
 
-      <HomeSection 
-        greeting='Olá, mundo! 🌎' 
-        description='Me chamo Cleberson, um desenvolvedor front-end, com especialidade em React.js, tendo um grande amor pela Web.'
+      <HomeSection
+        greeting="Olá, mundo! 🌎"
+        description="Me chamo Cleberson, um desenvolvedor front-end, com especialidade em React.js, tendo um grande amor pela Web."
         illustration={homeIllustration}
         contacts={[
-          { link: 'https://github.com/cleberson-dev', icon: { src: githubIcon } },
-          { link: 'https://twitter.com/jrcleb', icon: { src: twitterIcon, color: '#1DA1F2' } },
-          { link: 'mailto:cleberson.dev@gmail.com', icon: { src: emailIcon, color: '#2867B2' } }
+          {
+            link: 'https://github.com/cleberson-dev',
+            icon: { src: githubIcon },
+          },
+          {
+            link: 'https://twitter.com/jrcleb',
+            icon: { src: twitterIcon, color: '#1DA1F2' },
+          },
+          {
+            link: 'mailto:cleberson.dev@gmail.com',
+            icon: { src: emailIcon, color: '#2867B2' },
+          },
         ]}
       />
 
-      <AboutSection 
+      <AboutSection
         description={aboutData.description}
         profilePhoto={profilePhoto}
         summary={aboutData.summary}
@@ -49,7 +57,5 @@ function App() {
     </AppContainer>
   );
 }
-
-
 
 export default App;
