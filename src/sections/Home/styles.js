@@ -1,7 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 
 import Section from '../../components/Section';
-import SectionTitle from '../../components/Title';
 
 const illustrationIn = keyframes`
   from {
