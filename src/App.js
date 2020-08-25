@@ -48,7 +48,7 @@ function App() {
 
       <ProjectsSection projects={projectsData} />
 
-      <ContactSection />
+      {/* <ContactSection /> */}
     </AppContainer>
   );
 }
